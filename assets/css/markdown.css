@@ -1,0 +1,15 @@
+.prose > div > :first-child {
+  margin-top: 0;
+}
+
+.prose > div > :last-child {
+  margin-bottom: 0;
+}
+
+.dark .prose pre {
+  background-color: #0e0e0e;
+}
+
+html:not(.dark) .prose pre {
+  background-color: #fafafa;
+}

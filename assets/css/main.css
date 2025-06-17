@@ -1,0 +1,86 @@
+:root {
+  --bg: #ffffff;
+  --scrollbar: #eee;
+  --scrollbar-hover: #bbb;
+}
+
+html {
+  background-color: var(--bg);
+}
+
+html.dark {
+  --bg: #000000;
+  --scrollbar: #111;
+  --scrollbar-hover: #222;
+}
+
+* {
+  scrollbar-color: var(--scrollbar) var(--bg);
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar:horizontal {
+  height: 6px;
+}
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-corner {
+  background: var(--bg);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-hover);
+}
+
+
+.list a {
+  transition: 0.2s all ease-out;
+  text-decoration: none;
+  border-bottom: none !important;
+  opacity: 0.6;
+}
+
+.list a:hover {
+  opacity: 1;
+}
+
+.nav a {
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+    transition: opacity .2s ease;
+    opacity: .6;
+    outline: none
+}
+
+.nav a:hover {
+    opacity: 1;
+    text-decoration-color: inherit
+}
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+
+.dark::view-transition-old(root) {
+  z-index: 9999;
+}
+
+.dark::view-transition-new(root) {
+  z-index: 1;
+}
+
+::view-transition-old(root) {
+  z-index: 1;
+}
+
+::view-transition-new(root) {
+  z-index: 9999;
+}
