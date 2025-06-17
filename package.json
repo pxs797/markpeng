@@ -1,5 +1,5 @@
 {
-  "name": "nuxt-app",
+  "name": "markpeng",
   "private": true,
   "type": "module",
   "scripts": {
@@ -10,7 +10,7 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "@nuxt/content": "3.5.1",
+    "@nuxt/content": "3.6.0",
     "@nuxt/eslint": "1.4.1",
     "@nuxt/icon": "^1.13.0",
     "@nuxt/image": "1.10.0",
