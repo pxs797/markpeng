@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const { data } = await useAsyncData(() => queryCollection('default').path('/').first())
+const { data } = await useAsyncData(() => queryCollection('content').path('/').first())
 </script>
 
 <template>
