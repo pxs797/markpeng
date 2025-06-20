@@ -60,6 +60,6 @@ export default defineNuxtConfig({
     },
   },
   icon: {
-    collections: ['carbom'],
+    collections: ['carbon'],
   },
 })
